@@ -1,9 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import {App} from './App.jsx'
-import { Cuidades } from './administrador/pages/Cuidades.jsx'
-import { Autobuses } from './administrador/pages/Autobuses.jsx'
-import ErrorPage  from './pages/ErrorPage.jsx'
+import {Inicio} from './administrador/pages/Inicio.jsx'
+import {Ciudades} from './administrador/pages/AutobusesForm.jsx'
+import {Autobuses} from './administrador/pages/AutobusesForm.jsx'
+import {ErrorPage}  from './pages/ErrorPage.jsx'
+
 import {
   createBrowserRouter,
   RouterProvider
@@ -16,8 +18,12 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
   },
   {
+    path: "adminInicio",
+    element: <Inicio />
+  },
+  {
     path: "administradorCuidad",
-    element: <Cuidades />,
+    element: <Ciudades />,
   },
   {
     path: "administradorAutobus",
