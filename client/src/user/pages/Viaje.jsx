@@ -17,7 +17,7 @@ export const Viaje = () => {
         loadData()
     }, [])
 
-    if (viajeData.length == 0) return <p className="display-2">Viajes no econtrados</p>
+    if (viajeData.length == 0) return <p className="display-2">Viajes no encontrados</p>
 
     return (
         <>
