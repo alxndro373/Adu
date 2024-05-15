@@ -19,9 +19,9 @@ export const Viaje = () => {
         loadData()
     }, [])
 
-   
     const fechaActual = new Date()
-    if (viajeData.length == 0) return <p className="display-2">Viajes no encontrados</p>
+
+    if (viajeData.length == 0) return <p className="display-2">Viajes no econtrados</p>
 
     const viajeSeleccionado = (hora,precio,fecha) => {
         updateHora(hora)
